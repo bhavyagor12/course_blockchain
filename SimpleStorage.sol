@@ -18,4 +18,16 @@ contract SimpleStorage {
     //view function just reads from what is present in the contract, meaning there is no modification of state as a result no gas is spent
     //pure function doesnot allow read / modification of state but instead just performs stuff for the contract that is repeatedly performed like simple math fucntions
     // both the above functions dont spend gas
+
+    //array and struct
+    struct People {
+        uint256 favouriteNumber;
+        string name;
+    }
+
+    People[] public people;
+
+    People public person = People({favouriteNumber: 2, name: "bhavya"});
+
+    //array
 }
