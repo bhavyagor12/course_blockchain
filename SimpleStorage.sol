@@ -1,5 +1,5 @@
 // SPDX-License-Identifier:MIT
-pragma solidity ^0.8.7;
+pragma solidity 0.8.7;
 
 contract SimpleStorage {
     //boolean,unit,int,address,bytes
@@ -25,9 +25,21 @@ contract SimpleStorage {
         string name;
     }
 
-    People[] public people;
+    //map
+    mapping(string => uint256) public nameToFavNumber;
 
-    People public person = People({favouriteNumber: 2, name: "bhavya"});
+    // uint256[] public favouriteNumberList;
+    People[] public people; //dynamic array []
 
-    //array
+    //static array [3]
+
+    // People public person = People({favouriteNumber:2,name:"bhavya"});
+
+    function addPerson(string memory _name, uint256 _favNumber) public {
+        // People memory newPerson = People({favouriteNumber:_favNumber,name: _name});
+        people.push(People(_favNumber, _name)); //People object and people is array variable name
+        nameToFavNumber[_name] = _favNumber;
+
+        //  people.push(newPerson);
+    }
 }
