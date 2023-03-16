@@ -1,0 +1,2 @@
+All solidity code gets compiled to EVM (ethereum virtual machine)
+examples -- Avalance, Fantom, Polygon are EVM compatible
