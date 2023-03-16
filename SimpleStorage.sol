@@ -1,10 +1,10 @@
 // SPDX-License-Identifier:MIT
-pragma solidity 0.8.7;
+pragma solidity ^0.8.7;
 
 contract SimpleStorage {
     //boolean,unit,int,address,bytes
     uint public favouriteNumber; //DEFAULT IS 0
-    uint public 
+
     // bool hasFavoriteNumber = true;
     // string name = "Bhavya";
     // address myAddress = 0xf35239d2c73c1f0e1E5ee8D174E0479a4040c26C;
