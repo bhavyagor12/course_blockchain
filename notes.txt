@@ -1,2 +1,9 @@
 All solidity code gets compiled to EVM (ethereum virtual machine)
 examples -- Avalance, Fantom, Polygon are EVM compatible
+
+While creating a contract steps:
+1) Write the SPDX-License-Identifier: MIT
+2) Write the version of solidity you want to use
+3) contract is similar to a class in other programming languages
+4) Arrays,struct, mapping(dictionary),functions, view and pure functions
+5) calldata and memory (temporary), storage variables
