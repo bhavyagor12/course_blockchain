@@ -25,7 +25,7 @@ contract SimpleStorage {
         string name;
     }
 
-    //map
+    //map string name mapped to number
     mapping(string => uint256) public nameToFavNumber;
 
     // uint256[] public favouriteNumberList;
